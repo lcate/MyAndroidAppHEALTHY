@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/ETEmailR"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Email"/>
+    <EditText
+        android:id="@+id/ETUsernameR"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ETEmailR"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="User Name"/>
+
+    <EditText
+        android:id="@+id/ETPasswordR"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ETUsernameR"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        android:hint="Password"
+        android:password="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ETPasswordR"
+        android:id="@+id/BSignIn"
+        android:layout_centerHorizontal="true"
+        android:text="SignIn"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/BLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BSignIn"
+        android:text="I already have an account"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/ETEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/username"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/ETPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ETEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/password"
+        android:hint="Password"
+        android:password="true" />
+
+    <Button
+        android:id="@+id/ButtonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ETPassword"
+        android:layout_centerHorizontal="true"
+        android:text="LogIn"
+        android:layout_margin="20dp"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/ButtonGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ButtonLogin"
+        android:layout_centerHorizontal="true">
+    </com.google.android.gms.common.SignInButton>
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/ButtonFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ButtonGoogle"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:id="@+id/ButtonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ButtonFacebook"
+        android:text="I don't have an account"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>
